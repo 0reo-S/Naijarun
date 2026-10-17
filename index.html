@@ -39,7 +39,8 @@ function fb(){var s=document.createElement('script');s.src='https://cdn.jsdelivr
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" onerror="fb()"></script>
 <script>
 // PASTE YOUR FIREBASE DATABASE URL BETWEEN THE QUOTES (no slash at the end). Leave empty for no online leaderboard.
-const DB='';
+const DB='https://naija-run-api.onrender.com';
+
 function init(){if(init.d)return;init.d=1;
 const T=THREE,$=i=>document.getElementById(i),pick=a=>a[Math.floor(Math.random()*a.length)];
 let best=0,nm='';try{best=+localStorage.getItem('nr5')||0;nm=localStorage.getItem('nrn')||''}catch(e){}$('hs').textContent=best?'Your best: ₦'+best:'';$('nm').value=nm;
